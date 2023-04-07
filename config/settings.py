@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 THIRD_PARTY_APPS = [
     "rest_framework",
+    "strawberry.django",
 ]
 
 CUSTOM_APPS = [
@@ -141,3 +142,9 @@ STATIC_URL = "static/"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 AUTH_USER_MODEL = "users.User"
+
+MEDIA_ROOT = "uploads"
+
+MEDIA_URL = "user-uploads/"
+
+PAGE_SIZE = 3

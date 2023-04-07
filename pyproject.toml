@@ -10,6 +10,7 @@ packages = [{include = "air_django"}]
 python = "^3.11"
 django = "^4.1.7"
 djangorestframework = "^3.14.0"
+strawberry-graphql-django = "^0.9.4"
 
 
 [tool.poetry.group.dev.dependencies]

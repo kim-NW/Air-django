@@ -1,3 +1,4 @@
+import time
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import (
@@ -129,6 +130,7 @@ class RoomDetail(APIView):
             raise NotFound
 
     def get(self, request, pk):
+        time.sleep(1)
         room = self.get_object(pk)
         serializer = RoomDetailSerializer(
             room,
